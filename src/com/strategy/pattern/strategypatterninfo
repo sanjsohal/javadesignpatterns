@@ -2,3 +2,6 @@ Strategy Pattern
 -Identity the aspects of your application that vary and separate them from what stays the same.
 -Take what varies and encapsulate it so it won't affect the rest of your code. Fewer unintended consequences from code changes and more flexibility
 in your systems!
+-Program to an interface, not to an implementation. From now, the Duck behaviors will live in a separate class - a class that implements a particular
+behavior interface. This way the duck classes won't need to know about any of the implementation details for their own behaviors.
+-Favor composition over inheritance. 
