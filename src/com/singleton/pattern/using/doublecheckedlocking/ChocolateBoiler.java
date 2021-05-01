@@ -1,14 +1,14 @@
-package com.singleton.pattern;
+package com.singleton.pattern.using.doublecheckedlocking;
 
-public class ChocolateBoilerUsingDoubleCheckedLocking {
+public class ChocolateBoiler {
 	private boolean empty;
 	private boolean boiled;
-	private volatile static ChocolateBoilerUsingDoubleCheckedLocking boiler = null;
-	public static synchronized ChocolateBoilerUsingDoubleCheckedLocking getInstance() {
+	private volatile static ChocolateBoiler boiler = null;
+	public static synchronized ChocolateBoiler getInstance() {
 		if(boiler == null) {
-			synchronized(ChocolateBoilerUsingDoubleCheckedLocking.class) {
+			synchronized(ChocolateBoiler.class) {
 				if(boiler == null) {
-					boiler = new ChocolateBoilerUsingDoubleCheckedLocking();
+					boiler = new ChocolateBoiler();
 				}
 			}
 		}
@@ -23,7 +23,7 @@ public class ChocolateBoilerUsingDoubleCheckedLocking {
 		return boiled;
 	}
 
-	private ChocolateBoilerUsingDoubleCheckedLocking() {
+	private ChocolateBoiler() {
 		empty = true;
 		boiled = false;
 	}

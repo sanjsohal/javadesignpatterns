@@ -1,13 +1,10 @@
-package com.singleton.pattern;
+package com.singleton.pattern.using.eager.initialization;
 
-public class ChocolateBoilerUsingSynchronizedMethod {
+public class ChocolateBoiler {
 	private boolean empty;
 	private boolean boiled;
-	private static ChocolateBoilerUsingSynchronizedMethod boiler = null;
-	public static synchronized ChocolateBoilerUsingSynchronizedMethod getInstance() {
-		if(boiler == null) {
-			boiler = new ChocolateBoilerUsingSynchronizedMethod();
-		}
+	private static ChocolateBoiler boiler = new ChocolateBoiler();
+	public static synchronized ChocolateBoiler getInstance() {		
 		return boiler;
 	}
 	
@@ -19,7 +16,7 @@ public class ChocolateBoilerUsingSynchronizedMethod {
 		return boiled;
 	}
 
-	private ChocolateBoilerUsingSynchronizedMethod() {
+	private ChocolateBoiler() {
 		empty = true;
 		boiled = false;
 	}

@@ -1,10 +1,10 @@
-package com.singleton.pattern;
+package com.singleton.pattern.using.synchronize.method;
 
 
 
-public class ChocoHolicCompanyUsingSynchronizedMethod implements Runnable{
+public class ChocoHolicCompany implements Runnable{
 	public void run() {
-		ChocolateBoilerUsingSynchronizedMethod chocolateBoiler = ChocolateBoilerUsingSynchronizedMethod.getInstance();
+		ChocolateBoiler chocolateBoiler = ChocolateBoiler.getInstance();
 		System.out.println(chocolateBoiler);
 		//chocolateBoiler.fill();
 		//chocolateBoiler.boil();
@@ -12,7 +12,7 @@ public class ChocoHolicCompanyUsingSynchronizedMethod implements Runnable{
 	}
 	public static void main(String...args) {		
 		for(int i = 0;i<10;i++) {
-			Runnable worker = new ChocoHolicCompanyUsingSynchronizedMethod();
+			Runnable worker = new ChocoHolicCompany();
 			Thread thread = new Thread(worker);
 			thread.start();
 		}
