@@ -1,0 +1,5 @@
+Singleton pattern ensures that a class only has one instance and provide global point of access to it. In multi-threaded applications, we can
+ensure that a class only has one instance by making the method which return instance synchronized or using eager initialization method or using
+double checked locking. Double checked locking technique is better than synchronized method technique because synchronized method keeps lock on 
+the method without ensuring that it has already created object or not and on the other hand double checked locking ensures that method will only
+have synchronized lock unless it have not created object.
