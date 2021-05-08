@@ -8,5 +8,5 @@ between objects.
 -Java has built in Observer Pattern. It has Observable class and Observer interface in java.util package. For a class to be Subject, it has to 
 extend Observable class. It provides built in methods like addObservers(), deleteObservers() and notifyObservers() to handle observers. For an 
 class to become observer, it has to implement Observer interface from java.util.Observer. It provides method update(Observable o, Object arg) that
-is implemented by observers. In this method, arg is the data that can be pushed by Subject. From Observable, we use notifyObservers(Object org)
+is implemented by observers. In this method, arg is the data that can be pushed by Subject. From Observable, we use notifyObservers(Object arg)
 method. By using this method Subject can push data to Observers.
