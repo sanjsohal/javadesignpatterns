@@ -1,0 +1,12 @@
+Currently Starbuzz coffee has various outlets. They are using an ordering system which is designed as shown in classes in this package.
+
+Now there is requirement that anyone can ask for condiments like steamed milk, soy and mocha and have topped off with milk. In their first attempt,
+they tried to make several classes to calculate cost of beverage with condiments. Some of the classes that they attempted was
+HouseBlendWithSteamedMilkandMocha, DarkMilkWithSteamedMilkandMocha, DecafWithSteamedMilkandMocha, DarkRoastWithWhipandSoy, DecafWithWhipandSoy etc.
+There will be a class explosion as they have to make many classes to calculate cost of different combinations. Each of these new classes will 
+calculate cost of coffee with condiments. This will create a maintenance nightmare for Starbuzz in two conditions i.e.
+-What to do when the price of milk go up?
+ As per current approach, we have to make change in many places. So it will be a maintenance nightmare.
+-What to do when there is new topping let us say, carmel?
+As per current design, we have to create many number of classes as mentioned above in class explosion. We have to create new class with carmel 
+and other combinations.
