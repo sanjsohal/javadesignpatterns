@@ -1,0 +1,12 @@
+The Open-Closed Principle
+Classes should be open for extension and closed for modification.
+What Open Closed Principle states seems contradictory. We can't extend a class without modification. But there are some time tested Ojbect Oriented
+techniques which allows us to extend without modifying. For example in observer pattern, we are adding new Observers to a subject without altering
+the code of Subject. This is one of the example. Be careful while choosing the area of code that needs to be extended, because applying Open Closed
+Principle everywhere is wasteful and unnecessary as this can lead to complex and hard to understand code.
+Designs that are resilient to change and flexible enough to take on new functionality to meet changing requirements.
+
+
+Decorator Pattern
+-Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provides a flexible alternative to subclassing for
+ extending functionality.
