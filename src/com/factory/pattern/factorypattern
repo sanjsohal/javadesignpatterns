@@ -1,0 +1,23 @@
+Factory Pattern
+
+-Simple factory is not actually a design pattern. It is more of a programming idiom.
+
+Factory Method Pattern
+-Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a
+class defer instantiation to subclasses. Factory method decouple the object creation from client through inheritance.
+
+The Dependency Inversion Principle
+-Depend upon abstractions. Do not depend on concrete classes.
+-This principle suggests that our high-level components should not depend on our low-level components; rather they should both depend on
+abstractions. A "high-level" component is a class with behavior defined in terms of other, "low-level" components. For example, PizzaStore is a 
+high-level component because its behavior is defined in terms of pizzas - it creates all the different pizza objects, and prepares, bakes, cuts,
+and boxes them, while the pizzas it uses are low-level components.
+-The following guidelines should be kept in mind while choosing OO design that don't violate Dependency Inversion Principle
+a) No variable should hold a reference to concrete class.
+b) No class should derive from a concrete class.
+c) No method should override an implemented method of any of its base classes.
+
+Abstract Factory Pattern
+-The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+This pattern decouples client code from object creation through object composition.
+ 
