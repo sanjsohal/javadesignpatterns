@@ -4,7 +4,8 @@ Factory Pattern
 
 Factory Method Pattern
 -Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a
-class defer instantiation to subclasses. Factory method decouple the object creation from client through inheritance.
+class defer instantiation to subclasses. Factory method relies on inheritance: object creation is delegated to subclasses, which implement the
+factory method to create objects.
 
 The Dependency Inversion Principle
 -Depend upon abstractions. Do not depend on concrete classes.
@@ -19,5 +20,5 @@ c) No method should override an implemented method of any of its base classes.
 
 Abstract Factory Pattern
 -The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-This pattern decouples client code from object creation through object composition.
+Abstract Factory relies on object composition: object creation is implemented in methods exposed in the factory interfaces.
  
