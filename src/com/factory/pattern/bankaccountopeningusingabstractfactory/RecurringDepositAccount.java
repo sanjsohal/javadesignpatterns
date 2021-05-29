@@ -4,7 +4,7 @@ public class RecurringDepositAccount extends DepositAccount {
 
 	public RecurringDepositAccount(long accountNo, String accountHolderName,
 			int termInMonths) {
-		super(accountNo, accountHolderName, AccountType.RECCURING_DEPOSIT, termInMonths);
+		super(accountNo, accountHolderName, AccountType.RECURRING_DEPOSIT, termInMonths);
 		setInterestStrategy(InterestStrategy.COMPOUND);
 	}
 

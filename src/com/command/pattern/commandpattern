@@ -1,0 +1,21 @@
+Command Pattern-
+
+The Command Pattern encapsulates a request as an object, thereby letting you parameterized other objects with different requests, queue or log 
+requests, and do undoable operations.
+
+An encapsulated request is an object which contains a receiver and the actions that can be performed on it. An invoker - for instance one slot of 
+the remote - can be parameterized with different requests. An encapsulated request object is a command.
+
+The Client is responsible for creating a ConcreteCommand and setting its Receiver.
+
+The Invoker holds a command and at some point asks the command to carry out a request by calling its execute() method.
+
+Command declares an interface for all commands. As you already know, a command is invoked through its execute() method, which asks a receiver to 
+perform an action.
+
+The Receiver knows how to perform the work needed to carry out the request. Any class can act as a Receiver.
+
+The ConcreteCommand defines a binding between an action and a Receiver. The Invoker makes a request by calling execute() and the ConcreteCommand
+carries it out by calling one or more actions on the Receiver.
+
+The execute method invokes the action(s) on the receiver needed to fulfill the request.
