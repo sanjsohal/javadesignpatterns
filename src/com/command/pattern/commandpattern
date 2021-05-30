@@ -19,3 +19,7 @@ The ConcreteCommand defines a binding between an action and a Receiver. The Invo
 carries it out by calling one or more actions on the Receiver.
 
 The execute method invokes the action(s) on the receiver needed to fulfill the request.
+
+We can see there are lot of classes in Command Pattern. There is kind of rush of number of classes. But when there is only one method in Command
+interface. We can use lambda expressions rather making separate classes for each command. Through it we can limit the number of classes from 22 to
+6.
