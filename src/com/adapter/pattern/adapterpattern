@@ -1,0 +1,21 @@
+Adapter Pattern-
+
+The Adapter Pattern converts the interface of a class into another interface that clients expect. Adapter lets classes work together that couldn't
+otherwise because of incompatible interfaces. 
+
+There are two types of adapters: object adapters and class adapters. In the basic example of this pattern in the projects, we have covered object
+adapter. We have not used class adapters because one needs multiple inheritance to implement it, which isn't possible in Java.
+
+Real world of Adapter Pattern Example-
+
+The early collection types (Vector, Stack, Hashtable, and a few other) implements a method, elements(), which returns and Enumeration. The
+Enumeration interface allows you to step through the elements of a collection without knowing the specifics of how they are managed in the
+collection.
+
+The newer Collection classes use an Iterator interface that, like Enumeration, allows you to iterate through a set of items in a collection, but 
+also adds the ability to remove items.
+
+We are often faced with legacy code that exposes the Enumeration interface, yet we'd like for our new code to use only Iterators. It looks like we
+need to build an  Adapter.
+
+Real world example is also defined in one of the project.

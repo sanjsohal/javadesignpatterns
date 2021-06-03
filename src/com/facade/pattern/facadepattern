@@ -1,0 +1,17 @@
+Facade Pattern-
+
+A facade not only simplifies an interface, it decouples a client from a subsystem of components. 
+
+Facades and adapters may wrap multiple classes, but a facade's intent is to simplify, while an adapter is to convert the interface to something
+different.
+
+The Facade Pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the 
+subsystem easier to use.
+
+The Principle of Least Knowledge-
+
+Principle of Least Knowledge: talk only to your immediate friends. It means when you are designing a system, for any object, be careful of the 
+number of classes it interacts with and also how it comes to interact with those classes. This principle prevents us from creating designs that 
+have coupled a large number of classes coupled together so that changes in one part of the system cascade to other parts. When y ou build a lot of 
+dependencies between many classes, you are building a fragile system that will be costly to maintain and complex for others to understand. This 
+principle is also called Law of Demeter.
