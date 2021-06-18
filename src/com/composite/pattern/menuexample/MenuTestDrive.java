@@ -8,6 +8,9 @@ public class MenuTestDrive {
 		MenuComponent dessertMenu = new Menu("DESSERT MENU","Dessert of courses!");
 		MenuComponent allMenus = new Menu("ALL MENUS","All menus combined");
 		allMenus.add(pancakeHouseMenu);
+		pancakeHouseMenu.add(new MenuItem("K&B's Pancake Breakfast","Pancake with scrambled eggs",true,2.99));
+		pancakeHouseMenu.add(new MenuItem("Regular Pancake Breakfast","Pancake with fried eggs, sausage",false,2.99));
+		pancakeHouseMenu.add(new MenuItem("Blueberry Pancakes","Pancake made with fresh blueberries and blueberry syrup",true,3.49));
 		allMenus.add(dinerMenu);
 		allMenus.add(cafeMenu);
 		dinerMenu.add(new MenuItem("Pasta","Spaghetti with Marinera Sauce, and a slice of sourdough bread",true,3.89));
